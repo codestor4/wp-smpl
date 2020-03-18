@@ -1,0 +1,118 @@
+header {
+	background:#fff;
+	width:100%;
+	min-height:100px;
+}
+
+
+#site-name {
+	color:#111;
+	text-align:center;
+	margin:30px 0;
+	cursor:pointer;
+}
+
+#site-description {
+	color:#999;
+}
+
+.page-wrap {
+	padding:2rem 0;
+}
+
+header .top-bar {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+
+header .top-nav-bar {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:#28a745;
+	padding:2px 0;
+	border-radius:3px;
+}
+
+header .top-bar li a {
+	padding:.25rem 1rem;
+	color: #fff;
+}
+
+header .top-bar li {
+	position:relative;
+}
+
+header .top-bar li:first-child a {
+	padding-left:0;
+}
+
+header .top-bar li:last-child a {
+	padding-right:0;
+}
+
+header .top-bar li .sub-menu {
+	display:none;
+	position:absolute;
+	z-index:999;
+	top:100%;
+	left:0;
+	background:#fff;
+	box-shadow:1px 1px 10px rgba(0,0,0,0.1);
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	min-width:150px;
+	border-radius:0.2rem;
+}
+
+header .top-bar li .sub-menu a {
+	color:green;
+	padding:0.25rem;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+}
+
+header .top-bar li .sub-menu a:hover {
+	color:#000;
+}
+
+header .top-bar > .menu-item-has-children:hover > .sub-menu,
+header .top-bar > .menu-item-has-children .sub-menu > .menu-item-has-children:hover > .sub-menu {
+	display:block;
+}
+
+header .top-bar .sub-menu li .sub-menu {
+	top:0;
+	left:100%;
+}
+
+.theme-pagination .page-numbers {
+	display:inline-block;
+    height:30px;
+    width:30px;
+    line-height:30px;
+
+    -moz-border-radius:30px; /* or 50% */
+    border-radius:30px; /* or 50% */
+
+    background-color:#28a745;
+    color:white;
+    text-align:center;
+    font-size:1em;
+    margin:0 0.2em;
+}
+
+.theme-pagination .next,
+.theme-pagination .prev {
+	width:100px;
+}
+
+.theme-pagination .current {
+	background: #ddd;
+    color: black;
+    cursor:default
+}
